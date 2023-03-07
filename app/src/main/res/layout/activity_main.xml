@@ -3,14 +3,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    tools:context=".MainActivity">
 
     <ImageView android:id="@+id/imageLoading1"
         android:layout_height="fill_parent"
         android:layout_width="fill_parent"
         android:visibility="visible"
-        android:scaleType="fitCenter"
+        android:scaleType="center"
         android:background="@mipmap/splash_loading" />
 
     <WebView
