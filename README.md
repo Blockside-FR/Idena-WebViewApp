@@ -1,3 +1,3 @@
 # Idena-WebViewApp
 
-WebView android app for app.idena.io
+Android WebView App for app.idena.io
