@@ -3,19 +3,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <ImageView android:id="@+id/imageLoading1"
-        android:layout_height="fill_parent"
-        android:layout_width="fill_parent"
-        android:visibility="visible"
-        android:scaleType="center"
-        android:background="@mipmap/splash_loading" />
+    android:visibility="visible"
+    tools:context=".MainActivity"
+    tools:visibility="gone">
 
     <WebView
         android:id="@+id/activity_main_webview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:visibility="gone"/>
+        android:visibility="gone" />
 
 </RelativeLayout>

@@ -23,25 +23,11 @@ public class MainActivity extends Activity {
         webSettings.setJavaScriptEnabled(true);
         webSettings.setJavaScriptCanOpenWindowsAutomatically(true);
         webSettings.setDomStorageEnabled(true);
+        findViewById(R.id.activity_main_webview).setVisibility(View.VISIBLE);
         mWebView.loadUrl("https://app.idena.io");
         mWebView.reload();
 
-        mWebView.setWebViewClient(new MyAppWebViewClient() {
-            @Override
-            public void onPageFinished(WebView view, String url) {
 
-                findViewById(R.id.activity_main_webview).setVisibility(View.VISIBLE);
-
-                try {
-                    Thread.sleep(2000);
-                } catch (InterruptedException e) {
-                    Thread.currentThread().interrupt();
-                }
-
-                findViewById(R.id.imageLoading1).setVisibility(View.GONE);
-
-            }
-        });
 
     }
 
